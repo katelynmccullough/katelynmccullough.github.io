@@ -4,104 +4,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Katelyn McCullough | Codes & Creates</title>
+  <title>Katelyn | Links</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --black: #0b0b0b;
-      --white: #f7f5f2;
-      --red: #b50924;
+      --black: #101010;
+      --white: #f8f7f5;
+      --red: #a80f29;
     }
+
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
+      min-height: 100vh;
       background: var(--white);
       color: var(--black);
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    header {
-      padding: 24px 7%;
+      font-family: "DM Sans", sans-serif;
       display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #aaa;
+      justify-content: center;
       align-items: center;
+      padding: 45px 20px;
     }
-    .logo { font-weight: 900; letter-spacing: -1px; }
-    .tag { font-size: 11px; letter-spacing: 2px; }
-    main { max-width: 900px; margin: auto; padding: 90px 7%; }
-    .eyebrow { color: var(--red); letter-spacing: 3px; font-size: 12px; }
+
+    .container {
+      width: 100%;
+      max-width: 430px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 24px;
+      background: var(--black);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 38px;
+      font-weight: 700;
+      border: 3px solid var(--red);
+    }
+
     h1 {
-      font-size: clamp(64px, 12vw, 130px);
-      line-height: .85;
-      letter-spacing: -7px;
-      margin: 25px 0;
-      text-transform: uppercase;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 32px;
+      letter-spacing: -1.5px;
+      margin: 0;
     }
+
     h1 span { color: var(--red); }
-    .intro { max-width: 450px; line-height: 1.7; margin: 35px 0 65px; }
-    .section-title {
-      border-bottom: 2px solid var(--black);
-      padding-bottom: 12px;
-      font-size: 12px;
-      letter-spacing: 3px;
+
+    .subtitle {
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin: 13px 0 42px;
+      color: #666;
     }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
     .link {
       display: flex;
-      justify-content: space-between;
-      padding: 25px 5px;
-      border-bottom: 1px solid #aaa;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      min-height: 64px;
+      padding: 18px 45px;
+      background: var(--black);
+      color: white;
+      border: 1px solid var(--black);
+      border-radius: 18px;
       text-decoration: none;
-      color: inherit;
-      font-size: clamp(19px, 4vw, 29px);
-      font-weight: bold;
-      transition: .2s;
+      font-weight: 700;
+      font-size: 15px;
+      transition: all 0.25s ease;
+      box-shadow: 4px 4px 0 var(--red);
     }
-    .link:hover { color: var(--red); padding-left: 15px; }
-    footer { padding: 50px 7%; font-size: 12px; }
-    @media(max-width: 600px) {
-      h1 { letter-spacing: -4px; }
-      header { gap: 12px; }
+
+    .link:hover {
+      background: var(--red);
+      border-color: var(--red);
+      transform: translateY(-3px);
+      box-shadow: 4px 7px 0 var(--black);
+    }
+
+    .arrow {
+      position: absolute;
+      right: 22px;
+      font-size: 19px;
+    }
+
+    .footer {
+      margin-top: 45px;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--red);
+      font-weight: 700;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 29px; }
+      .link { min-height: 60px; }
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="logo">KM<span style="color:#b50924">.</span></div>
-    <div class="tag">CODE / CREATE / QUESTION</div>
-  </header>
+  <main class="container">
 
-  <main>
-    <div class="eyebrow">WELCOME TO MY CORNER OF THE INTERNET</div>
-    <h1>KATELYN<br><span>CODES.</span></h1>
+    <div class="avatar">KM</div>
 
-    <p class="intro">
-      Data science student, creative thinker, and
-      a girl who likes making complicated things
-      look cool. Tech, research, projects, and
-      everything in between.
-    </p>
+    <h1>Katelyn<span>.</span></h1>
+    <p class="subtitle">data science & digital things</p>
 
-    <div class="section-title">01 / FIND ME ONLINE</div>
-    <a class="link" href="https://github.com/katelynmccullough" target="_blank" rel="noopener noreferrer">GITHUB <span>↗</span></a>
-    <a class="link" href="#projects">MY PROJECTS <span>↗</span></a>
-    <a class="link" href="#series">BECOMING A TECH GIRLIE <span>↗</span></a>
-    <a class="link" href="#contact">LET'S CONNECT <span>↗</span></a>
+    <div class="links">
 
-    <div id="projects" style="margin-top:90px">
-      <div class="section-title">02 / PROJECTS</div>
-      <p>Cool things are in the works. Stay tuned.</p>
+      <a class="link"
+         href="https://www.linkedin.com/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Connect on LinkedIn
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link"
+         href="#"
+         onclick="return false;">
+        Katelyn Codes — Coming Soon
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link"
+         href="https://github.com/katelynmccullough"
+         target="_blank"
+         rel="noopener noreferrer">
+        My GitHub
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link"
+         href="https://www.tiktok.com/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Find Me on TikTok
+        <span class="arrow">↗</span>
+      </a>
+
     </div>
 
-    <div id="series" style="margin-top:70px">
-      <div class="section-title">03 / BECOMING A TECH GIRLIE</div>
-      <p>Code, tutorials, experiments, and a little chaos.</p>
-    </div>
+    <div class="footer">CONNECT WITH ME ♥</div>
 
-    <div id="contact" style="margin-top:70px">
-      <div class="section-title">04 / CONTACT</div>
-      <p>Social and contact links coming soon.</p>
-    </div>
   </main>
-
-  <footer>© 2026 KATELYN MCCULLOUGH — BUILT WITH CODE & CAFFEINE.</footer>
 </body>
 </html>
