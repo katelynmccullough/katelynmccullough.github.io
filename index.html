@@ -1,187 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>katelyncodes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <meta
+    name="description"
+    content="Katelyn McCullough's corner of the internet. Explore Katelyn Codes, coding projects, and social platforms."
+  />
 
-  <style>
-    :root {
-      --cream: #fff9f8;
-      --pink: #f6e5e8;
-      --red: #a91939;
-      --text: #271b20;
-      --border: #dcb4bf;
-    }
+  <meta name="theme-color" content="#fff9f8" />
 
-    * { box-sizing: border-box; }
+  <title>Katelyn ♡ | Links & Projects</title>
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background: var(--cream);
-      color: var(--text);
-      font-family: "DM Sans", sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 45px 20px;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    .container {
-      width: 100%;
-      max-width: 420px;
-      text-align: center;
-    }
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+    rel="stylesheet"
+  />
 
-    .avatar {
-      width: 105px;
-      height: 105px;
-      border-radius: 50%;
-      margin: 0 auto 20px;
-      background: var(--pink);
-      border: 2px solid var(--red);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: var(--red);
-      font-family: "Playfair Display", serif;
-      font-size: 30px;
-    }
-
-    h1 {
-      font-family: "Playfair Display", serif;
-      font-size: 38px;
-      margin: 0 0 12px;
-      letter-spacing: -1px;
-    }
-
-    h1 span { color: var(--red); }
-
-    .bio {
-      font-size: 13px;
-      line-height: 1.8;
-      color: #6c5960;
-      margin: 0 auto 32px;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .link {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 62px;
-      padding: 15px 45px;
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 50px;
-      color: var(--text);
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 600;
-      transition: all .25s ease;
-    }
-
-    .link:hover {
-      background: var(--pink);
-      border-color: var(--red);
-      transform: translateY(-3px);
-      box-shadow: 0 6px 15px #a9193920;
-    }
-
-    .symbol {
-      position: absolute;
-      left: 22px;
-      color: var(--red);
-      font-size: 19px;
-    }
-
-    .arrow {
-      position: absolute;
-      right: 22px;
-      color: var(--red);
-      font-size: 19px;
-    }
-
-    .footer {
-      margin-top: 42px;
-      color: var(--red);
-      font-size: 12px;
-      font-style: italic;
-    }
-
-    .coming-soon {
-      opacity: .65;
-      cursor: default;
-    }
-
-    @media(max-width:480px) {
-      h1 { font-size: 35px; }
-      .link { min-height: 60px; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <main class="container">
+  <main class="container" id="main-content">
 
-    <img class="avatar" src="IMG_8152.JPG" alt="Katelyn's profile photo">
+    <header class="profile">
+      <img
+        class="avatar"
+        src="IMG_8152.JPG"
+        alt="Portrait of Katelyn McCullough"
+        width="112"
+        height="112"
+      />
 
-    <h1>katelyn <span>♡</span></h1>
+      <h1>katelyn <span>♡</span></h1>
 
-    <p class="bio">
-      becoming a tech girlie one day at a time 🎀<br>
-      learning the things everyone apparently knows
-    </p>
+      <p class="username">@katelyncodes</p>
 
-    <div class="links">
+      <p class="bio">
+        becoming a tech girlie one day at a time 🎀
+        <span>coding, creating & figuring it out along the way</span>
+      </p>
+    </header>
 
-      <a class="link"
-         href="https://www.linkedin.com/in/katelynmccullough09"
-         target="_blank" rel="noopener noreferrer">
-        <span class="symbol">♡</span>
-        let's connect on linkedin
-        <span class="arrow">↗</span>
-      </a>
+    <section class="links-section" aria-labelledby="links-heading">
+      <h2 id="links-heading" class="section-title">
+        find me on the internet
+      </h2>
 
-      <div class="link coming-soon">
-        <span class="symbol">🎀</span>
-        katelyn codes — coming soon
-        <span class="arrow">♡</span>
-      </div>
+      <nav aria-label="Social links and projects">
+        <ul id="links" class="links">
+          <li>
+            <a
+              class="link"
+              href="https://katelynmccullough.github.io/katelyncodes/"
+            >
+              <span class="symbol" aria-hidden="true">🎀</span>
+              <span>explore katelyn codes</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
 
-      <a class="link"
-         href="https://github.com/katelynmccullough"
-         target="_blank" rel="noopener noreferrer">
-        <span class="symbol">⌘</span>
-        stalk my github
-        <span class="arrow">↗</span>
-      </a>
-
-      <a class="link"
-         href="https://www.tiktok.com/@katelyncodes"
-         target="_blank" rel="noopener noreferrer">
-        <span class="symbol">♥</span>
-        find me on tiktok
-        <span class="arrow">↗</span>
-      </a>
-
-    </div>
-
-    <div class="footer">
-      made with love & a little bit of code ♡
-    </div>
+    <footer class="footer">
+      <p>made with love & a little bit of code ♡</p>
+      <p class="copyright">
+        © <span id="year">2026</span> Katelyn McCullough
+      </p>
+    </footer>
 
   </main>
 </body>
